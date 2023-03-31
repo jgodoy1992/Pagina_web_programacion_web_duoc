@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <title>Hongos</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand"
+          ><img class="icono" src="./imagenes/icono-pagina.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gourmet.html">Hongos Gourmet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./en_construccion.html">Esporas hongos mágicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./en_construccion.html">Artículos de Interés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./en_construccion.html">Aprende con Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./en_construccion.html">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Ingreso
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="./registro.html">Registro</a>
+                  <a class="dropdown-item" href="./en_construccion.html">Login</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrito_compra.html"
+                ><img class="carrito" src="./imagenes/carrito.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!---REgistro datos usuario-->
+
+    <div class="container">
+      <h3 class="text-center">Registro Usuario</h3>
+      <form action="" class="main-form needs-validation">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="inputNombre">Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="inputNombre"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="inputAp">Apellido</label>
+              <input
+                type="text"
+                name="apellido"
+                id="inputAp"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputCorreo">Email</label>
+          <input
+            type="text"
+            name="correo"
+            id="inputCorreo"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="from-group">
+          <label for="inputPass">Contraseña</label>
+          <input
+            type="text"
+            name="password"
+            id="inputPass"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputTel">Telefono de contacto</label>
+          <input
+            type="text"
+            name="telefono"
+            id="inputTel"
+            class="form-control"
+          />
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="inputCalle">Calle</label>
+              <input
+                type="text"
+                name="calle"
+                id="inputCalle"
+                class="form-control"
+                ç
+                required
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="inputNum">Nº</label>
+              <input
+                type="text"
+                name="numero"
+                id="inputNum"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="inputCom">Comuna</label>
+              <input
+                type="text"
+                name="comuna"
+                id="inputCom"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="inputCiu">Ciudad</label>
+              <input
+                type="text"
+                name="ciudad"
+                id="inputCiu"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <!---Forma de pago-->
+        <div class="container">
+          <h4 class="row-margin">Forma de pago</h4>
+          <div
+            class="card shadow-2-strong mb-5 mb-lg-0"
+            style="border-radius: 16px"
+          >
+            <div class="card-body p-4">
+              <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0">
+                  <form>
+                    <div class="d-flex flex-row pb-3">
+                      <div class="d-flex align-items-center pe-2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="radioNoLabel"
+                          id="radioNoLabel1v"
+                          value=""
+                          aria-label="..."
+                          checked
+                        />
+                      </div>
+                      <div class="rounded border w-100 p-3">
+                        <p class="d-flex align-items-center mb-0">
+                          <i
+                            class="fab fa-cc-mastercard fa-2x text-dark pe-2"
+                          ></i
+                          >Tarjeta de Crédito
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row pb-3">
+                      <div class="d-flex align-items-center pe-2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="radioNoLabel"
+                          id="radioNoLabel2v"
+                          value=""
+                          aria-label="..."
+                          required
+                        />
+                      </div>
+                      <div class="rounded border w-100 p-3">
+                        <p class="d-flex align-items-center mb-0">
+                          <i
+                            class="fab fa-cc-visa fa-2x fa-lg text-dark pe-2"
+                          ></i
+                          >Tarjeta de Débito
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                      <div class="d-flex align-items-center pe-2"></div>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-6">
+                  <div class="row">
+                    <div class="col-12 col-xl-6">
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input
+                          type="text"
+                          id="typeName"
+                          class="form-control form-control-lg"
+                          siez="17"
+                          placeholder=""
+                          required
+                        />
+                        <label class="form-label" for="typeName"
+                          >Nombre del Titular</label
+                        >
+                      </div>
+
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input
+                          type="text"
+                          id="typeExp"
+                          class="form-control form-control-lg"
+                          placeholder="MM/YY"
+                          size="7"
+                          id="exp"
+                          minlength="7"
+                          maxlength="7"
+                          required
+                        />
+                        <label class="form-label" for="typeExp"
+                          >Fecha Vencimiento</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input
+                          type="text"
+                          id="typeText"
+                          class="form-control form-control-lg"
+                          siez="17"
+                          placeholder="1111 2222 3333 4444"
+                          minlength="19"
+                          maxlength="19"
+                          required
+                        />
+                        <label class="form-label" for="typeText"
+                          >Número Tarjeta</label
+                        >
+                      </div>
+
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input
+                          type="password"
+                          id="typeText"
+                          class="form-control form-control-lg"
+                          placeholder="&#9679;&#9679;&#9679;"
+                          size="1"
+                          minlength="3"
+                          maxlength="3"
+                          required
+                        />
+                        <label class="form-label" for="typeText">Cvv</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xl-3">
+                  <div
+                    class="d-flex justify-content-between"
+                    style="font-weight: 500"
+                  ></div>
+
+                  <div
+                    class="d-flex justify-content-between"
+                    style="font-weight: 500"
+                  ></div>
+
+                  <div
+                    class="d-flex justify-content-between mb-4"
+                    style="font-weight: 500"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container text-right" style="margin: 20px 0 100px 0">
+            <button type="submit" class="btn btn-secondary">Registrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      var form = document.querySelector(".needs-validation");
+      form.addEventListener("submit", function (event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add("was-validated");
+      });
+    </script>
+  </body>
+</html>

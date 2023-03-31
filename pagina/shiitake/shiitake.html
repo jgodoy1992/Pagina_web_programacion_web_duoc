@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <title>Hongos</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand"
+          ><img class="icono" src="../imagenes/icono-pagina.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../gourmet.html">Hongos Gourmet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../en_construccion.html">Esporas hongos mágicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../en_construccion.html">Artículos de Interés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../en_construccion.html">Aprende con Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../en_construccion.html">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Ingreso
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="../registro.html">Registro</a>
+                  <a class="dropdown-item" href="../en_construccion.html">Login</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../carrito_compra.html"
+                ><img class="carrito" src="../imagenes/carrito.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-6">
+          <img src="../imagenes/shiitake.jpg" alt="" />
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Shiitake</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="product-price">$14.990</h2>
+            </div>
+          </div>
+          <div class="row add-to-cart">
+            <div class="col-md-12 product-qty row-margin">
+              <button type="button" class="btn btn-default">
+                <span
+                  class="glyphicon glyphicon-plus"
+                  aria-hidden="true"
+                ></span>
+                +
+              </button>
+              <input class="btn btn-default btn-sm btn-qty" value="1" />
+              <button type="button" class="btn btn-default">
+                <span
+                  class="glyphicon glyphicon-minus"
+                  aria-hidden="true"
+                ></span>
+                -
+              </button>
+            </div>
+
+            <br />
+            <div class="col-md-4 row-margin">
+              <button
+                class="btn btn-lg btn-brand btn-full-width"
+                data-toggle="modal"
+                data-target="#ventanaModal"
+              >
+                Añadir al carrito
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 text center">
+            <span class="stock-font">En Stock</span>
+          </div>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#descripcion"
+                >Descripcion</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#caracteristicas"
+                >Caracteristicas</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="descripcion" class="tab-pane fade in active">
+              <p>
+                Los pack de cultivo, corresponden a un grupo de elementos que le
+                permitirán cultivar nuestros champiñones a aquellas personas que
+                ya han experimentado un poco más en el cultivo de Hongos, ya que
+                requiere ser sembrado e incubado. Produce aproximadamente cada
+                bolsa 250 grs de Shiitake
+              </p>
+            </div>
+            <div id="caracteristicas" class="tab-pane fade">
+              <ul>
+                <li>
+                  3 sustrato de madera dura de 2.0 kilos, esterilizado y con
+                  amortiguador de ph
+                </li>
+                <li>1 kilo de micelio de Hongo Shiitake</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="ventanaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="ventanaModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ventanaLabelModal">Exito</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>El producto se ha añadido al carrito</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Seguir comprando
+            </button>
+            <a href="../carrito_compra.html" class="btn btn-primary">
+              Ir al carrito</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
